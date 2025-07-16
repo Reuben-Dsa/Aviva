@@ -419,8 +419,18 @@ body {
 
 .team-member {
   flex: 1 1 200px;
+  min-width: 300px;
   max-width: 250px;
   text-align: center;
+}
+
+.team-member img { 
+  width: 150px;          /* or 100%, or any fixed width */
+  height: 200px;         /* same height for uniformity */
+  object-fit: cover;     /* ensures image fills space without distortion */
+  border-radius: 10%;    /* optional: makes them circular */
+  display: block;
+  margin: 0 auto;        /* center-align if needed */
 }
 
 .team-member h3 {
@@ -500,7 +510,27 @@ body {
   scroll-padding-top: 80px; /* adjust if your header is taller */
   --base-font-size: 25px;
 }
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  background-color: #4B0082;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
 /* Resposive site */
 
 @media (max-width: 768px) {
@@ -557,5 +587,11 @@ body {
 
   .hero-image {
     margin-top: 2rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
   }
 }
