@@ -250,13 +250,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10%;
 }
 
 .director-image img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: 75%;
   padding-left: 50%;
 }
 /* Why Us */
