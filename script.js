@@ -125,4 +125,12 @@ form.addEventListener("submit", function (e) {
     });
 });
 
+document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const recipient = this.href.substring(7); // Extracts the email address from the mailto link
+        const sender = "your_sender_address@example.com"; // Your desired sender address
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&from=${sender}`);
+    });
+});
 });
