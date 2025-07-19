@@ -115,6 +115,9 @@ body {
 
 .logo .caretaker {
   color: purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center;
 }
 
 .nav {
@@ -349,13 +352,13 @@ body {
   background-color: #4B0082;
 }
 
-/* Courses */
-.courses {
+/* curriculum */
+.curriculum {
   padding: 3rem 0;
   background-color: #fff;
 }
 
-.courses-grid {
+.curriculum-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
