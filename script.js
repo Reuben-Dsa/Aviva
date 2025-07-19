@@ -100,6 +100,7 @@ form.addEventListener("submit", function (e) {
     data: {
       name: formData.get("data[name]"),
       email: formData.get("data[email]"),
+      number: formData.get("data[phone]"),
       message: formData.get("data[message]"),
     },
   };

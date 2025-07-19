@@ -250,7 +250,7 @@ body {
 
 .director-image {
   flex: 1 1 40%;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -258,7 +258,6 @@ body {
 .director-image img {
   max-width: auto;
   height: auto;
-  border-radius: 75%;
   padding-left: 50%;
 }
 /* Why Us */
@@ -577,7 +576,7 @@ body {
   .director-image img {
     display: block;
     margin: 0 auto;
-    padding-left: 25%;
+    padding-left: 2%;
   }
 
   .hero-flex {
