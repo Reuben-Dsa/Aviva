@@ -386,13 +386,13 @@ body {
   color: #4B0082;
 }
 
-/* Visa Assistance */
-.visa-assistance {
+/* job-opportunities */
+.job-opportunities {
   padding: 3rem 0;
   background-color: #f3f0fa;
 }
 
-.visa-assistance ul li {
+.job-opportunities ul li {
   margin-bottom: 1rem;
 }
 
