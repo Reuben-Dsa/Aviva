@@ -250,15 +250,17 @@ body {
 
 .director-image {
   flex: 1 1 40%;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 250px;
 }
 
 .director-image img {
-  max-width: auto;
+  max-width: 100%;
   height: auto;
-  padding-left: 50%;
+  object-fit: contain;
+  border-radius: 12px;
 }
 /* Why Us */
 .why-us {
@@ -511,7 +513,7 @@ body {
 
 
 :root {
-  scroll-padding-top: 80px; /* adjust if your header is taller */
+  scroll-padding-top: 120px; /* increased padding for better navigation offset */
   --base-font-size: 25px;
 }
 html, body {
@@ -562,6 +564,13 @@ body {
     position: absolute;
     right: 1rem;
     top: 1rem;
+  }
+
+  .header .title {
+    font-size: 1rem;
+  }
+  .header .caretaker{
+    font-size: 1rem;
   }
 
   .director-flex {
