@@ -513,7 +513,7 @@ body {
 
 
 :root {
-  scroll-padding-top: 120px; /* increased padding for better navigation offset */
+  scroll-padding-top: 300px; /* increased padding for better navigation offset */
   --base-font-size: 25px;
 }
 html, body {
